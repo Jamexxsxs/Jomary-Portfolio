@@ -456,14 +456,39 @@ body {
     background: linear-gradient(to right, #0c002b, #f82e54);
 }
 
-.home-container .tech-skills .level-5{
-    position: relative;
-    display: flex;
-    top: 0;
-    left: 0;
-    width: 14vw;
-    height: auto;
-    background: linear-gradient(to right, #0c002b, #f82e54);
+.home-container .tech-skills .level-1::after,
+.home-container .tech-skills .level-2::after,
+.home-container .tech-skills .level-3::after,
+.home-container .tech-skills .level-4::after{
+    position: absolute;
+    top: -1vw;
+    background-color: #f82e54;
+    border-radius: 100%;
+    text-align: center;
+    padding: 0.5vw;
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+    font-size: 0.6vw;
+}
+
+.home-container .tech-skills .level-1::after{
+    left: 11vw;
+    content: '70%';
+}
+
+.home-container .tech-skills .level-2::after{
+    left: 8vw;
+    content: '58%';
+}
+
+.home-container .tech-skills .level-3::after{
+    left: 14vw;
+    content: '83%';
+}
+
+.home-container .tech-skills .level-4::after{
+    left: 12vw;
+    content: '76%';
 }
 
 .home-container .prof-soft{
@@ -475,10 +500,18 @@ body {
     transition: 0.5s ease;
 }
 
+.home-container .prof-soft p:first-child{
+    width: 58vw;
+    text-align: justify;
+    font-size: 1.54vw;
+    transition: 0.5s ease;
+}
+
 .home-container .prof-soft .prof-label{
     align-self: flex-start;
     font-weight: 800;
     font-size: 2.5vw;
+    margin-top: 4vw;
 }
 
 .home-container .prof-soft .pro-skills{
@@ -514,10 +547,10 @@ body {
     font-size: 2.5vw;
 }
 
-.home-container .prof-soft .my-services{
+.home-container .my-services{
     position: absolute;
-    margin-top: 35vw;
-    margin-left: -13vw;
+    margin-top: 23vw;
+    margin-left: 230vw;
 	text-transform: uppercase;
 	font-size: 1vw;
     font-weight: 800;
@@ -531,12 +564,12 @@ body {
 }
 
 
-.home-container .prof-soft .my-services:hover{
+.home-container .my-services:hover{
     color:#f82e54;
     background-color: wheat;
 }
 
-.home-container .prof-soft .my-services i{
+.home-container .my-services i{
     color:#f82e54;
 }
 

@@ -74,7 +74,7 @@ document.addEventListener('wheel', (event) => {
         }
 
         else if(count === -2){
-          change_view(99, 2)
+          change_view(163.5, 2)
         }
       }
     }
@@ -86,11 +86,11 @@ document.addEventListener('wheel', (event) => {
         }
 
         else if(count === -2){
-          change_view(99, 2)
+          change_view(163.5, 2)
         }
 
         else if(count === -3){
-          change_view(159, 3)
+          change_view(260, 3)
         }
       }
     }
@@ -129,32 +129,4 @@ function change_view(view, select){
       option_a.style.fontWeight = '400'
     }
   })
-
-  if (select === 1){
-    tech_skills.style.transform = 'translateX(0)'
-    prof_soft.style.transform = 'translateX(0)'
-    skills_button.style.opacity = '1'
-    skills_button.style.cursor = 'pointer'
-    about_text.style.opacity = '1'
-    about_text.style.cursor = 'text'
-    my_details.style.transform = 'translateY(0)'
-    my_interest.style.transform = 'translateX(0)'
-  }
-  else if(select === 2){
-    tech_skills.style.transform = 'translateX(-35vw)'
-    prof_soft.style.transform = 'translateX(-35vw)'
-    skills_button.style.opacity = '0'
-    skills_button.style.cursor = 'default'
-    about_text.style.opacity = '0'
-    about_text.style.cursor = 'default'
-    my_details.style.transform = 'translateY(-10vw)'
-    my_interest.style.transform = 'translate(-28vw, 12vw)'
-    services_button.style.opacity = '1'
-  }
-
-  else if(select === 3){
-    tech_skills.style.transform = 'translateX(-35vw)'
-    prof_soft.style.transform = 'translateX(-35vw)'
-    services_button.style.opacity = '0'
-  }
 }
