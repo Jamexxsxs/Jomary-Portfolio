@@ -70,7 +70,7 @@ document.addEventListener('wheel', (event) => {
         }
 
         else if(count === -1){
-          change_view(65, 1)
+          change_view(60, 1)
         }
 
         else if(count === -2){
@@ -82,7 +82,7 @@ document.addEventListener('wheel', (event) => {
       if (count != -4){
         count--
         if(count === -1){
-          change_view(65, 1)
+          change_view(60, 1)
         }
 
         else if(count === -2){
@@ -114,6 +114,8 @@ function change_view(view, select){
   let option_a = null
   const change = document.getElementById('content')
   change.style.transform = `translateX(-${view}vw)`
+
+  count = 0-select
 
 
   menu.forEach(function(element){

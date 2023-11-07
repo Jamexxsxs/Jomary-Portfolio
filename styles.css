@@ -53,8 +53,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-image: url(img/home_bg.jpg);
-    background-size: cover;
     overflow: hidden;
 }
 
@@ -125,7 +123,7 @@ body {
 .home-container div:first-child{
     display: flex;
     flex-direction: column;
-    width: 65vw;
+    width: 59vw;
 }
 
 .home-container p{
@@ -267,6 +265,7 @@ body {
 
 .home-container img{
     margin-top: 10vw;
+    margin-right: 3vw;
     width: 20vw;
     height: 20vw;
     border-radius: 50%;
@@ -276,14 +275,15 @@ body {
 .home-container .about{
     display: flex;
     flex-direction: column;
-    width: 55vw;
-    margin-left: 10vw;
+    width: 50vw;
+    margin-left: 13vw;
     margin-top: -3vw;
+    margin-right: 5vw;
 }
 
 .about p:first-child{
     text-align: justify;
-    font-size: 1vw;
+    font-size: 1.1vw;
     transition: 0.5s ease;
 }
 
@@ -549,7 +549,7 @@ body {
 
 .home-container .my-services{
     position: absolute;
-    margin-top: 23vw;
+    margin-top: 16.5vw;
     margin-left: 230vw;
 	text-transform: uppercase;
 	font-size: 1vw;
@@ -573,3 +573,15 @@ body {
     color:#f82e54;
 }
 
+
+.home-container .services-container{
+    justify-content: center;
+    margin-left: 35vw;
+    width: 90vw;
+}
+
+.home-container .services-container p:first-child{
+    text-align: center;
+    font-size: 1.2vw;
+    width: 45vw;
+}
