@@ -13,11 +13,11 @@
 <body>
     <div class="container">
         <video autoplay muted loop src="video/home_bg.mp4"></video>
+        <audio controls id="mp3" autoplay loop src="audio/yt5s.io - 3-min Amaranth Galaxy Timer _ ambient countdown with relaxing music _ 3 minutes (HD) (128 kbps).mp3" type="audio/mp3"></audio>
         <div class="header">
             <h1>Jomary</h1>
             <div>
-                <a id="contact-a">CONTACTS</a>
-                <a id="services-a" onclick="change_view(260, 3)">SERVICES</a>
+                <a id="contacts-a" onclick="change_view(260, 3)">CONTACTS</a>
                 <a id="skills-a" onclick="change_view(163.5, 2)">SKILLS</a>
                 <a id="about-a" onclick="change_view(60, 1)">ABOUT</a>
                 <a id="home-a" onclick="change_view(0, 0)">HOME</a>
@@ -36,10 +36,10 @@
                     <p onclick="change_view(60, 1)">Know More About Me <i class="fa-solid fa-question"></i></p>
                 </a>
                 <div class="socials">
-                    <i class="fa-brands fa-discord"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-telegram"></i>
+                    <a href="https://discord.com/users/Mirana#6170" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://www.instagram.com/j0msssz" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                    <a><i class="fa-brands fa-telegram"></i></a>
                 </div>
             </div>
             <img src="img/img1.svg">
@@ -85,7 +85,7 @@
                 <div></div>
             </div>
             <div id="prof-soft" class="prof-soft">
-                <p><span>Discover</span> my skills and expertise. Explore a diverse range of abilities that I bring to the table. From technical proficiencies to soft skills, get to know what sets me apart.</p>
+                <p><span>Discover my skills and expertise.</span> Explore a diverse range of abilities that I bring to the table. From technical proficiencies to soft skills, get to know what sets me apart.</p>
                 <p class="prof-label">Professional Skills</p>
                 <div class="pro-skills">
                     <span class="pro-text"><i class="fa-solid fa-walkie-talkie"></i> <p>Communication</p></span>
@@ -101,15 +101,30 @@
                     <span class="pro-text"><i class="fa-solid fa-people-group"></i> <p>Leadership</p></span>
                 </div>
             </div>
-            <a id="my-services-button" class="my-services">
+            <a id="my-contact-button" class="my-contacts">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                <p onclick="change_view(260, 3)">Know My Services <i class="fa-solid fa-question"></i></p>
+                <p onclick="change_view(260, 3)">Contact Me Now <i class="fa-solid fa-question"></i></p>
             </a>
-            <div class="services-container">
-                <p><span>Discover</span> a range of specialized development services tailored to your needs. Whether you're in need of software, web, or mobile development expertise, I've got you covered. Explore our offerings and get in touch to discuss your project.</p>
+            <div class="contacts-container">
+                <p><span>Have questions, feedback, or a project in mind?</span> Reach out to me using the form below. I'm here to help. Additionally, you can find me at my location in Lilo-an Cebu. We look forward to connecting with you!</p>
+                <div class="contact">
+                    <div class="location">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>Block 2 Lot 16, Thyme Street, Villa Lorena 2, San Vicente, Lilo-an, Cebu</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!4v1699426362980!6m8!1m7!1sG9Vo8xhvelQ2qbmoykSzhg!2m2!1d10.39946870039879!2d123.9682554672831!3f10.530568460390912!4f0.2884536635330477!5f0.7820865974627469" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="message">
+                        <i class="fa-solid fa-inbox"></i>
+                        <p>Message Me</p>
+                        <input placeholder="Your Name">
+                        <input placeholder="Your Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <button id="submit-button" class="submit">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

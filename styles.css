@@ -387,6 +387,7 @@ body {
     margin-left: 10vw;
     margin-top: -3.75vw;
     transition: 0.5s ease;
+    transform: translate(45vw, 8.8vw);
 }
 
 .home-container .tech-skills .tech-label{
@@ -396,15 +397,21 @@ body {
     color: #f8f8f8;
     align-self: flex-start;
     margin-bottom: 0vw;
+    transform: translateX(11vw);
 }
 
 .home-container .tech-skills .tech-text{
     font-size: 1.2vw;
     color: #f8f8f8;
     font-weight: 600;
-    margin-top: 3.5vw;
+    margin-top: 3vw;
     margin-bottom: 0;
     align-self: flex-start;
+}
+
+.home-container .tech-skills p:nth-child(6),
+.home-container .tech-skills p:nth-child(8){
+    transform: translate(22vw, -12vw);
 }
 
 .home-container .tech-skills .tech-container{
@@ -413,6 +420,11 @@ body {
     width: 20vw;
     height: 0.3vw;
     background-color: gray;
+}
+
+.home-container .tech-skills div:nth-child(7),
+.home-container .tech-skills div:nth-child(9){
+    transform: translate(22vw, -12vw);
 }
 
 .home-container .tech-skills .level-1{
@@ -498,13 +510,15 @@ body {
     width: 30vw;
     margin-left: 0vw;
     transition: 0.5s ease;
+    transform: translateX(-30vw);
 }
 
 .home-container .prof-soft p:first-child{
     width: 58vw;
-    text-align: justify;
+    text-align: center;
     font-size: 1.54vw;
     transition: 0.5s ease;
+    width: 88vw;
 }
 
 .home-container .prof-soft .prof-label{
@@ -518,6 +532,7 @@ body {
     display: flex;
     flex-direction: row;
     align-self: flex-start;
+    margin-bottom: 2.5vw;
 }
 
 .home-container .prof-soft .pro-skills span{
@@ -530,7 +545,7 @@ body {
 }
 
 .home-container .prof-soft .pro-skills p{
-    font-size: 0.8vw;
+    font-size: 1.2vw;
     font-weight: 600;
     text-wrap: nowrap;
 }
@@ -547,10 +562,10 @@ body {
     font-size: 2.5vw;
 }
 
-.home-container .my-services{
+.home-container .my-contacts{
     position: absolute;
-    margin-top: 16.5vw;
-    margin-left: 230vw;
+    margin-top: 35vw;
+    margin-left: 223vw;
 	text-transform: uppercase;
 	font-size: 1vw;
     font-weight: 800;
@@ -564,24 +579,121 @@ body {
 }
 
 
-.home-container .my-services:hover{
+.home-container .my-contacts:hover{
     color:#f82e54;
     background-color: wheat;
 }
 
-.home-container .my-services i{
+.home-container .my-contacts i{
     color:#f82e54;
 }
 
 
-.home-container .services-container{
+.home-container .contacts-container{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-left: 35vw;
+    margin-left: 36vw;
+    width: 89vw;
+    margin-top: -4vw;
+}
+
+.home-container .contacts-container p:first-child{
+    text-align: center;
+    font-size: 1.2vw;
     width: 90vw;
 }
 
-.home-container .services-container p:first-child{
-    text-align: center;
+.home-container .contacts-container .contact{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+}
+
+.home-container .contacts-container .contact .location{
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 18vw;
+}
+
+.home-container .contacts-container .contact .location i,
+.home-container .contacts-container .contact .message i{
+    font-size: 3vw;
+    color:#f82e54;
+}
+
+.home-container .contacts-container .contact .location p,
+.home-container .contacts-container .contact .message p{
     font-size: 1.2vw;
-    width: 45vw;
+    text-align: center;
+}
+
+.home-container .contacts-container .contact .location iframe{
+    width: 40vw;
+    height: 25vw;
+}
+
+.home-container .contacts-container .contact .message{
+    margin-top: -1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-container .contacts-container .contact .message input{
+    width: 30vw;
+    height: 2vw;
+    margin-bottom: 3vw;
+    border-radius: 2px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: #f8f8f8;
+}
+
+.home-container .contacts-container .contact .message input:focus,
+.home-container .contacts-container .contact .message textarea:focus{
+    outline-color: #f82e54;
+}
+
+.home-container .contacts-container .contact .message input::placeholder,
+.home-container .contacts-container .contact .message textarea::placeholder{
+    color: #f82e54;
+    font-weight: 600;
+}
+
+
+.home-container .contacts-container .contact .message textarea{
+    width: 30vw;
+    height: 5vw;
+    margin-bottom: 2vw;
+    border-radius: 2px;
+    background-color: transparent;
+    color: #f8f8f8;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 3vw;
+}
+
+.home-container .contacts-container .contact .message button{
+    background-color: transparent;
+    color: #f8f8f8;
+    width: 10vw;
+    height: 3vw;
+    border-color: #f82e54;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.home-container .contacts-container .contact .message button:hover{
+    background-color: wheat;
+    color: #f82e54;
+    width: 10vw;
+    height: 3vw;
+    border-color: transparent;
+    cursor: pointer;
 }

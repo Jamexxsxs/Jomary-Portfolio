@@ -4,7 +4,7 @@ let words = ['Web Developer', 'Software Developer', 'Mobile Developer']
 let wordIndex = 0
 let charIndex = 0
 let isTyping = true
-let menu = ['home', 'about', 'skills', 'services', 'contact']
+let menu = ['home', 'about', 'skills', 'contacts']
 let count = 0
 
 function typeText() {
@@ -63,9 +63,12 @@ document.addEventListener('wheel', (event) => {
 
   if(!incrementing){
     if (event.deltaY < 0) {
-      if (count != 0){
+      if (count <= 0){
         count++
-        if(count === 0){
+        if(count === 1){
+          change_view(260, 3)
+        }
+        else if(count === 0){
           change_view(0, 0)
         }
 
@@ -79,7 +82,7 @@ document.addEventListener('wheel', (event) => {
       }
     }
     else{
-      if (count != -4){
+      if (count >= -4){
         count--
         if(count === -1){
           change_view(60, 1)
@@ -91,6 +94,13 @@ document.addEventListener('wheel', (event) => {
 
         else if(count === -3){
           change_view(260, 3)
+        }
+
+        else if(count === -3){
+          change_view(260, 3)
+        }
+        else if(count === -4){
+          change_view(0, 0)
         }
       }
     }
@@ -132,3 +142,6 @@ function change_view(view, select){
     }
   })
 }
+
+const mp3 = document.getElementById('mp3')
+mp3.play();
